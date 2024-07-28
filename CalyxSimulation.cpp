@@ -4,8 +4,13 @@
 #include <numeric>
 using namespace std;
 
-int GREEN = 21;
-int PURPLE = 15;
+int GREEN = 0;
+int PURPLE = 0;
+
+int greenGoal = 22;
+int blueGoal = 81;
+int purpleGoal = 154;
+
 
 int changeBluesFromGreens(int &greens, int diff) {
     // keep reducing until diff is less than 3?
@@ -32,20 +37,18 @@ int changePurplesFromBlues(int& blues, int diff) {
 }
 
 bool greenCheck(int green) {
-    return green <= 16;
+    return green <= greenGoal;
 }
 
 bool blueCheck(int blue) {
-    return blue <= 128;
+    return blue <= blueGoal;
 }
 
 bool purpleCheck(int purple) {
-    return purple <= 396;
+    return purple <= purpleGoal;
 }
 
-#include <iostream>
-#include <vector>
-#include <numeric> // For std::accumulate
+
 
 // Function to calculate the average of a vector of integers
 double calculateAverage(const vector<int>& numbers) {
@@ -67,9 +70,6 @@ int main()
     int currentBlue = 0;
     int currentPurple = 0;
 
-    int greenGoal = 16;
-    int blueGoal = 128;
-    int purpleGoal = 396;
     vector<int> allPower;
     int trailblazePower = 0;
 
