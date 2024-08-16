@@ -141,9 +141,9 @@ namespace CalyxSimulationEXE
             outputLabel.Text = "Average power used: " + avg.ToString() + 
                 ", takes " + Math.Round(avg/240,2) + " days, 100 simulations.";
 
-            greenBox.Text = "0";
-            blueBox.Text = "0";
-            purpleBox.Text = "0";
+            //greenBox.Text = "0";
+            //blueBox.Text = "0";
+            //purpleBox.Text = "0";
         }
     }
 }
