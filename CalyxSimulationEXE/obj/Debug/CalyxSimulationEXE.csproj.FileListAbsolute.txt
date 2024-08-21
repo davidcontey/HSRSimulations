@@ -1,0 +1,10 @@
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\bin\Debug\CalyxSimulationEXE.exe.config
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\bin\Debug\CalyxSimulationEXE.exe
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\bin\Debug\CalyxSimulationEXE.pdb
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.csproj.AssemblyReference.cache
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.Form1.resources
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.Properties.Resources.resources
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.csproj.GenerateResource.cache
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.csproj.CoreCompileInputs.cache
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.exe
+D:\Users\david\Desktop\new projects\CalyxSimulationEXE\CalyxSimulationEXE\obj\Debug\CalyxSimulationEXE.pdb
