@@ -36,6 +36,9 @@
             this.blueLabel = new System.Windows.Forms.Label();
             this.greenLabel = new System.Windows.Forms.Label();
             this.outputLabel = new System.Windows.Forms.Label();
+            this.gardenOfPlentyBox = new System.Windows.Forms.CheckBox();
+            this.worstCaseBox = new System.Windows.Forms.CheckBox();
+            this.bestCaseBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // confirmButton
@@ -108,11 +111,44 @@
             this.outputLabel.TabIndex = 7;
             this.outputLabel.Text = " ";
             // 
+            // gardenOfPlentyBox
+            // 
+            this.gardenOfPlentyBox.AutoSize = true;
+            this.gardenOfPlentyBox.Location = new System.Drawing.Point(337, 100);
+            this.gardenOfPlentyBox.Name = "gardenOfPlentyBox";
+            this.gardenOfPlentyBox.Size = new System.Drawing.Size(145, 17);
+            this.gardenOfPlentyBox.TabIndex = 8;
+            this.gardenOfPlentyBox.Text = "Garden of Plenty (7 days)";
+            this.gardenOfPlentyBox.UseVisualStyleBackColor = true;
+            // 
+            // worstCaseBox
+            // 
+            this.worstCaseBox.AutoSize = true;
+            this.worstCaseBox.Location = new System.Drawing.Point(337, 123);
+            this.worstCaseBox.Name = "worstCaseBox";
+            this.worstCaseBox.Size = new System.Drawing.Size(126, 17);
+            this.worstCaseBox.TabIndex = 9;
+            this.worstCaseBox.Text = "Worst Case Scenario";
+            this.worstCaseBox.UseVisualStyleBackColor = true;
+            // 
+            // bestCaseBox
+            // 
+            this.bestCaseBox.AutoSize = true;
+            this.bestCaseBox.Location = new System.Drawing.Point(337, 146);
+            this.bestCaseBox.Name = "bestCaseBox";
+            this.bestCaseBox.Size = new System.Drawing.Size(119, 17);
+            this.bestCaseBox.TabIndex = 10;
+            this.bestCaseBox.Text = "Best Case Scenario";
+            this.bestCaseBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bestCaseBox);
+            this.Controls.Add(this.worstCaseBox);
+            this.Controls.Add(this.gardenOfPlentyBox);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.greenLabel);
             this.Controls.Add(this.blueLabel);
@@ -138,6 +174,9 @@
         private System.Windows.Forms.Label blueLabel;
         private System.Windows.Forms.Label greenLabel;
         private System.Windows.Forms.Label outputLabel;
+        private System.Windows.Forms.CheckBox gardenOfPlentyBox;
+        private System.Windows.Forms.CheckBox worstCaseBox;
+        private System.Windows.Forms.CheckBox bestCaseBox;
     }
 }
 
