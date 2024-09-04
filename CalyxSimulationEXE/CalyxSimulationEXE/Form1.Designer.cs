@@ -39,6 +39,8 @@
             this.gardenOfPlentyBox = new System.Windows.Forms.CheckBox();
             this.worstCaseBox = new System.Windows.Forms.CheckBox();
             this.bestCaseBox = new System.Windows.Forms.CheckBox();
+            this.plentyDays = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // confirmButton
@@ -116,10 +118,11 @@
             this.gardenOfPlentyBox.AutoSize = true;
             this.gardenOfPlentyBox.Location = new System.Drawing.Point(337, 100);
             this.gardenOfPlentyBox.Name = "gardenOfPlentyBox";
-            this.gardenOfPlentyBox.Size = new System.Drawing.Size(145, 17);
+            this.gardenOfPlentyBox.Size = new System.Drawing.Size(105, 17);
             this.gardenOfPlentyBox.TabIndex = 8;
-            this.gardenOfPlentyBox.Text = "Garden of Plenty (7 days)";
+            this.gardenOfPlentyBox.Text = "Garden of Plenty";
             this.gardenOfPlentyBox.UseVisualStyleBackColor = true;
+            this.gardenOfPlentyBox.CheckedChanged += new System.EventHandler(this.gardenOfPlentyBox_CheckedChanged);
             // 
             // worstCaseBox
             // 
@@ -141,11 +144,31 @@
             this.bestCaseBox.Text = "Best Case Scenario";
             this.bestCaseBox.UseVisualStyleBackColor = true;
             // 
+            // plentyDays
+            // 
+            this.plentyDays.Enabled = false;
+            this.plentyDays.Location = new System.Drawing.Point(337, 74);
+            this.plentyDays.Name = "plentyDays";
+            this.plentyDays.Size = new System.Drawing.Size(100, 20);
+            this.plentyDays.TabIndex = 11;
+            this.plentyDays.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(218, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Garden of Plenty Days";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.plentyDays);
             this.Controls.Add(this.bestCaseBox);
             this.Controls.Add(this.worstCaseBox);
             this.Controls.Add(this.gardenOfPlentyBox);
@@ -177,6 +200,8 @@
         private System.Windows.Forms.CheckBox gardenOfPlentyBox;
         private System.Windows.Forms.CheckBox worstCaseBox;
         private System.Windows.Forms.CheckBox bestCaseBox;
+        private System.Windows.Forms.TextBox plentyDays;
+        private System.Windows.Forms.Label label1;
     }
 }
 

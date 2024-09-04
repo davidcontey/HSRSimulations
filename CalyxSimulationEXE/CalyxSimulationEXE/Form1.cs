@@ -20,6 +20,7 @@ namespace CalyxSimulationEXE
         int greenGoal;
         int blueGoal;
         int purpleGoal;
+        int gardenDays;
         Random random = new Random();
 
         public int changeBluesFromGreens(ref int greens, int diff)
@@ -135,7 +136,7 @@ namespace CalyxSimulationEXE
             {
                 rollChance(ref currentGreen, ref currentBlue, ref currentPurple);
                 trailblazePower += 10;
-                if (trailblazePower <= 1680 && trailblazePower % 240 == 0
+                if (trailblazePower <= gardenDays * 240 && trailblazePower % 240 == 0
                     && gardenOfPlentyBox.Checked)
                 {
                     day++;
@@ -190,7 +191,7 @@ namespace CalyxSimulationEXE
             {
                 guaranteeChance(ref currentGreen, ref currentBlue, ref currentPurple);
                 trailblazePower += 10;
-                if (trailblazePower <= 1680 && trailblazePower % 240 == 0
+                if (trailblazePower <= gardenDays * 240 && trailblazePower % 240 == 0
                     && gardenOfPlentyBox.Checked)
                 {
                     day++;
@@ -248,7 +249,7 @@ namespace CalyxSimulationEXE
                 {
                     rollChance(ref currentGreen, ref currentBlue, ref currentPurple);
                     trailblazePower += 10;
-                    if (trailblazePower <= 1680 && trailblazePower % 240 == 0
+                    if (trailblazePower <= gardenDays*240 && trailblazePower % 240 == 0
                         && gardenOfPlentyBox.Checked)
                     {
                         day++;
@@ -293,6 +294,7 @@ namespace CalyxSimulationEXE
             greenGoal = int.Parse(greenBox.Text);
             blueGoal = int.Parse(blueBox.Text);
             purpleGoal = int.Parse(purpleBox.Text);
+            gardenDays = int.Parse(plentyDays.Text);  
 
             if (worstCaseBox.Checked && bestCaseBox.Checked)
             {
@@ -309,6 +311,18 @@ namespace CalyxSimulationEXE
             else
             {
                 simulationCase();
+            }
+        }
+
+        private void gardenOfPlentyBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gardenOfPlentyBox.Checked)
+            {
+                plentyDays.Enabled = true;
+            }
+            else
+            {
+                plentyDays.Enabled = false;
             }
         }
     }
